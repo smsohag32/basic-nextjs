@@ -1,34 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# My First Next.js App
 
-## Getting Started
+## Description
 
-First, run the development server:
+This is my first basic Next.js application. It serves as a starting point for learning and exploring Next.js features and best practices.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Installation
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. Make sure you have Node.js installed on your machine.
+2. Clone this repository to your local machine using `git clone https://github.com/your-username/my-first-nextjs-app.git`.
+3. Navigate to the project directory using `cd my-first-nextjs-app`.
+4. Install the dependencies using `npm install`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Usage
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+To start the development server, run:
 
-## Learn More
+The application will be available at `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+## Technologies Used
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Next.js
+- React
+- CSS Modules
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Features
 
-## Deploy on Vercel
+- Home Page
+- About Page
+- Contact Page
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Contributions are welcome! Feel free to open pull requests or report issues.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+## Next.js Interview Questions & Answers
+
+**Q: What is Next.js?**
+A: Next.js is a React framework that enables server-side rendering, static site generation, and other optimizations to improve performance and SEO. It simplifies building React applications and provides features like automatic code splitting and hot module replacement.
+
+**Q: What are the benefits of using Next.js?**
+A: Next.js offers several benefits, including server-side rendering for improved performance, SEO optimization, automatic code splitting, file-based routing, and easy deployment. It also supports static site generation and serverless functions.
+
+**Q: How do you create a new page in Next.js?**
+A: To create a new page in Next.js, you need to add a new file inside the `pages` directory. The file's name will become the URL path for that page. For example, creating a file named `about.js` in the `pages` folder will create an `/about` page.
+
+**Q: What is getStaticProps in Next.js?**
+A: `getStaticProps` is a Next.js function used for static site generation. It allows you to fetch data at build time and pass it as props to a page. The data is then rendered statically and remains the same for all users until the page is regenerated.
+
+**Q: How can you fetch data on the server-side in Next.js?**
+A: You can use `getServerSideProps` or `getInitialProps` for server-side data fetching in Next.js. These functions run on the server and provide the fetched data as props to the page component.
+
+**Q: How do you implement client-side routing in Next.js?**
+A: Next.js provides a built-in `Link` component to implement client-side routing. By using the `Link` component and specifying the target URL as its `href`, Next.js handles the routing without a full page reload.
+
+**Q: What is the difference between `getServerSideProps` and `getStaticProps`?**
+A: `getServerSideProps` fetches data on every request on the server-side, providing real-time data. In contrast, `getStaticProps` fetches data at build time and generates a static page that is served to all users until the page is regenerated.
+
+**Q: How do you deploy a Next.js application?**
+A: Next.js applications can be deployed to various platforms like Vercel, Netlify, or AWS Amplify. You can use the `npm run build` command to generate a production build, and then use a hosting platform to deploy the build files.
