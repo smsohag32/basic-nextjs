@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 const Header = () => {
     return (
@@ -5,11 +6,15 @@ const Header = () => {
             <nav className="flex justify-between container mx-auto">
                 <div><h1>Basic Next</h1></div>
                 <ul className="flex gap-5">
-
-                    <a href="">Home</a>
-                    <a href="">Home</a>
-                    <a href="">Home</a>
-                    <a href="">Home</a>
+                    <li>
+                        <Link href="/">Home</Link>
+                    </li>
+                    <li>
+                    <Link href="/services">Services</Link>
+                    </li>
+                    <li>
+                    <Link href="/contact">Contact</Link>
+                    </li>
                 </ul>
             </nav>
         </div>
